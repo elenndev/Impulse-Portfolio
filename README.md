@@ -4,9 +4,9 @@ Este projeto é um portfólio digital que serve como uma vitrine para os produto
 
 ## Motivação do Projeto
 
-Como participante do programa, minha principal motivação para desenvolver este portfólio foi ir além dos requisitos do curso e criar algo que pudesse ser útil para a comunidade e para as empresas que investiram em nosso desenvolvimento. Este projeto não tem objetivo comercial; é uma forma de retribuir a oportunidade e documentar o impacto do programa Impulse para futuras edições.
+Como participante do programa, minha principal motivação para desenvolver este portfólio foi ir além dos requisitos do curso e criar algo que pudesse ser útil para a comunidade e para as empresas que investiram em nosso desenvolvimento. Este projeto não tem objetivo comercial, é uma forma de retribuir a oportunidade e documentar o impacto do programa Impulse para futuras edições.
 
-Acredito que esta plataforma pode servir como um recurso valioso, mostrando o potencial dos profissionais formados e o sucesso das soluções criadas.
+Acredito que esta plataforma pode servir como um recurso valioso, mostrando o potencial dos profissionais formados e o sucesso das soluções criadas nessa edição do programa impulse e também em edições futuras.
 
 ## Stack Tecnológica
 
