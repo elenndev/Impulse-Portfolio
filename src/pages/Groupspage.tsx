@@ -1,0 +1,43 @@
+import { useEffect, useState } from 'react';
+import { Card } from '../components/Card';
+import type { SimplifiedGroup } from '../types';
+import { getGroupsList } from '../service/api';
+import { OpenGroup } from '../components/OpenGroup';
+
+export function Groupspage() {
+  const [groups, setGroups] = useState<SimplifiedGroup[]>([]);
+  const [openGroup, setOpenGroup] = useState<null | string>(null);
+
+  useEffect(() => {
+    const fetchGroups = async () => {
+      const data = await getGroupsList();
+      setGroups(data);
+    };
+
+    fetchGroups();
+  }, []);
+
+  const handleCardClick = (groupId: string) => {
+    setOpenGroup(openGroup === groupId ? null : groupId);
+  };
+
+  function closeGroup() {
+    setOpenGroup(null);
+  }
+
+  return (
+    <div className="p-8">
+      <h2 className="text-4xl font-bold mb-8 text-destaque-amarelo">Projetos dos Grupos</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {!openGroup && groups.map((group) => (
+          <div key={group.id}>
+            <Card group={group} onClick={() => handleCardClick(group.id)} />
+          </div>
+        ))}
+      </div>
+      {openGroup && (
+        <OpenGroup groupId={openGroup} closeGroup={closeGroup} />
+      )}
+    </div>
+  );
+}
