@@ -16,4 +16,11 @@ O projeto foi construído utilizando as seguintes tecnologias:
 * **React Router:** Para gerenciar a navegação entre as diferentes páginas do portfólio.
 * **Tailwind CSS:** Para a estilização, permitindo um desenvolvimento rápido e um design moderno.
 
+## Rodando o projeto
+Clone esse repositório, instale as dependências e rode o projeto:
+``` bash 
+    npm i
+    npm run dev 
+``` 
+
 ---
