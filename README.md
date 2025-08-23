@@ -1,69 +1,19 @@
-# React + TypeScript + Vite
+# Portfólio do Programa Impulse
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é um portfólio digital que serve como uma vitrine para os produtos e soluções desenvolvidos durante o programa Impulse, uma iniciativa conjunta da FWK e da Campak.
 
-Currently, two official plugins are available:
+## Motivação do Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Como participante do programa, minha principal motivação para desenvolver este portfólio foi ir além dos requisitos do curso e criar algo que pudesse ser útil para a comunidade e para as empresas que investiram em nosso desenvolvimento. Este projeto não tem objetivo comercial; é uma forma de retribuir a oportunidade e documentar o impacto do programa Impulse para futuras edições.
 
-## Expanding the ESLint configuration
+Acredito que esta plataforma pode servir como um recurso valioso, mostrando o potencial dos profissionais formados e o sucesso das soluções criadas.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Stack Tecnológica
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+O projeto foi construído utilizando as seguintes tecnologias:
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+* **React:** Para a construção da interface de usuário.
+* **React Router:** Para gerenciar a navegação entre as diferentes páginas do portfólio.
+* **Tailwind CSS:** Para a estilização, permitindo um desenvolvimento rápido e um design moderno.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---

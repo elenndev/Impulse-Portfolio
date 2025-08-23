@@ -1,5 +1,38 @@
 @import "tailwindcss";
 
+
+.btn-yellow {
+  background: #FFF001;
+  transition: all 0.3s ease;
+  color: black;
+}
+
+.btn-yellow.btn-primary:hover {
+  box-shadow: 0px 0px 10px 5px rgba(255, 240, 1, 0.4);
+}
+
+.btn-secondary {
+  border: solid white 2px;
+}
+
+.btn-secondary:hover {
+  border-color: #FFF001;
+}
+
+.text-yellow {
+  color: #FFF001;
+}
+
+.mini-card {
+  background: rgba(5, 5, 5, 0.61);
+  border: solid #FCEE05 2px;
+}
+
+.extended-card {
+  background: rgba(5, 5, 5, 0.61);
+}
+
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -17,13 +50,14 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
   text-decoration: inherit;
 }
 
-a:hover {
-  color: #535bf2;
+a,
+button {
+  cursor: pointer;
 }
+
 
 body {
   margin: 0;
@@ -31,6 +65,11 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-image: url('/bg.png');
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 h1 {
@@ -51,7 +90,7 @@ button {
 }
 
 button:hover {
-  border-color: #646cff;
+  border-color: #FFF001;
 }
 
 button:focus,

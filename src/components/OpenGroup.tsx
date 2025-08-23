@@ -22,7 +22,7 @@ export const OpenGroup = ({ groupId, closeGroup }: openGroupProps) => {
 
 
   return (
-    <div className="mt-8 p-6 bg-gray-700 rounded-lg shadow-inner">
+    <div className="extended-card mt-8 p-6 rounded-lg shadow-inner">
       {!groupInfo && <p>carregando...</p>}
       {groupInfo && <>
         <span className="w-full flex flex-row justify-end">
@@ -43,18 +43,22 @@ export const OpenGroup = ({ groupId, closeGroup }: openGroupProps) => {
           <ul className="list-disc list-inside text-gray-400">
             {groupInfo.members.map((member) => (
               <li key={member.name}>
-                {member.name} - <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-destaque-amarelo hover:underline">LinkedIn</a>
+                {member.name} - <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-yellow hover:underline">LinkedIn</a>
               </li>
             ))}
           </ul>
         </div>
         <div className="flex gap-4">
-          <a href={groupInfo.project.repositoryLink} target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-destaque-amarelo text-black font-semibold rounded-full hover:bg-yellow-400 transition-colors">
+          <a href={groupInfo.project.repositoryLink} target="_blank" rel="noopener noreferrer"
+            className="px-4 py-2 btn-yellow btn-primary font-semibold rounded-full">
             Ver Repositório
           </a>
-          <a href={groupInfo.project.pitchLink} target="_blank" rel="noopener noreferrer" className="px-4 py-2 border border-destaque-amarelo text-destaque-amarelo rounded-full hover:bg-destaque-amarelo hover:text-black transition-colors">
-            Ver Pitch
-          </a>
+          {groupInfo.project.pitchLink &&
+            <a href={groupInfo.project.pitchLink} target="_blank" rel="noopener noreferrer"
+              className="px-4 py-2 btn-secondary rounded-full transition-colors">
+              Ver Pitch
+            </a>
+          }
         </div>
       </>}
     </div>

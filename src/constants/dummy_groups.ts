@@ -5,9 +5,9 @@ export const DUMMY_GROUPS: Group[] = [
     id: "1",
     name: 'Grupo Alpha',
     members: [
-      { name: 'João Silva', linkedin: 'https://www.linkedin.com/in/joaosilva' },
-      { name: 'Maria Santos', linkedin: 'https://www.linkedin.com/in/mariasantos' },
-      { name: 'Pedro Lima', linkedin: 'https://www.linkedin.com/in/pedrolima' },
+      { name: 'João Silva', linkedin: 'https://www.linkedin.com/in/' },
+      { name: 'Maria Santos', linkedin: 'https://www.linkedin.com/in/' },
+      { name: 'Pedro Lima', linkedin: 'https://www.linkedin.com/in/' },
     ],
     project: {
       name: 'EcoTrack: Gestão de Resíduos Inteligente',
@@ -20,8 +20,8 @@ export const DUMMY_GROUPS: Group[] = [
     id: "2",
     name: 'Grupo Beta',
     members: [
-      { name: 'Ana Souza', linkedin: 'https://www.linkedin.com/in/anasouza' },
-      { name: 'Carlos Oliveira', linkedin: 'https://www.linkedin.com/in/carlosoliveira' },
+      { name: 'Ana Souza', linkedin: 'https://www.linkedin.com/in/' },
+      { name: 'Carlos Oliveira', linkedin: 'https://www.linkedin.com/in/' },
     ],
     project: {
       name: 'HelpDesk Pro: Otimização de Atendimento ao Cliente',
@@ -34,10 +34,10 @@ export const DUMMY_GROUPS: Group[] = [
     id: "3",
     name: 'Grupo Gama',
     members: [
-      { name: 'Lucas Ferreira', linkedin: 'https://www.linkedin.com/in/lucasferreira' },
-      { name: 'Fernanda Costa', linkedin: 'https://www.linkedin.com/in/fernandacosta' },
-      { name: 'Ricardo Pires', linkedin: 'https://www.linkedin.com/in/ricardopires' },
-      { name: 'Beatriz Martins', linkedin: 'https://www.linkedin.com/in/beatrizmartins' },
+      { name: 'Lucas Ferreira', linkedin: 'https://www.linkedin.com/in/' },
+      { name: 'Fernanda Costa', linkedin: 'https://www.linkedin.com/in/' },
+      { name: 'Ricardo Pires', linkedin: 'https://www.linkedin.com/in/' },
+      { name: 'Beatriz Martins', linkedin: 'https://www.linkedin.com/in/' },
     ],
     project: {
       name: 'Marketlytics: Análise de Mercado Automatizada',

@@ -7,7 +7,7 @@ export interface Project {
   name: string;
   summary: string;
   repositoryLink: string;
-  pitchLink: string;
+  pitchLink?: string;
 }
 
 export interface Group {

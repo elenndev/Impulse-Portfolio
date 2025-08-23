@@ -8,7 +8,7 @@ export function Homepage() {
         Bem-vindo à vitrine dos projetos desenvolvidos pelos talentos do programa Impulse, uma parceria entre FWK e Campak.
       </p>
       <p className="mt-2 text-md text-gray-400">Aqui, você pode explorar as soluções inovadoras que foram criadas para resolver problemas reais.</p>
-      <Link to="/grupos" className="mt-8 px-6 py-3 bg-destaque-amarelo text-black font-semibold rounded-full hover:bg-yellow-400 transition-colors">
+      <Link to="/grupos" className="mt-8 px-6 py-3 btn-yellow btn-primary text-black font-semibold rounded-full hover:bg-yellow-400 transition-colors">
         Ver os Projetos
       </Link>
     </div>
