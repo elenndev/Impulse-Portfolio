@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { AiQueryField } from '../components/AiQueryField';
 
 export function Homepage() {
   return (
@@ -11,6 +12,7 @@ export function Homepage() {
       <Link to="/grupos" className="mt-8 px-6 py-3 btn-yellow btn-primary text-black font-semibold rounded-full hover:bg-yellow-400 transition-colors">
         Ver os Projetos
       </Link>
+      <AiQueryField />
     </div>
   );
 }
