@@ -3,7 +3,9 @@ import { useAiQueryField } from "../hooks/useAiQueryField"
 
 export const AiQueryField = () => {
   const { aiResponse, handleFormSubmit } = useAiQueryField(cleanInput);
-  const inputRef = useRef<HTMLInputElement | null>(null);
+  const inputRef = useRef<HTMLTextAreaElement | null>(null);
+
+  const isLoading = aiResponse === "Analisando pergunta..."
 
   function cleanInput() {
     if (!inputRef?.current) return;
@@ -12,13 +14,21 @@ export const AiQueryField = () => {
   }
 
   return (
-    <div>
-      <div className="aiField">{aiResponse}</div>
-      <form className="userField"
+    <section className="white-shadow-sm mx-auto mb-[8rem] mt-2 flex flex-col py-4 justify-center items-center w-full md:w-5/6 bg-[#0000002e] backdrop-blur-sm rounded-3xl">
+      <div className="aiField w-[90%] md:w-3/4 text-center mb-2">{aiResponse}</div>
+      <form className="userField flex flex-row gap-2"
         onSubmit={(e) => handleFormSubmit(e, inputRef.current)}>
-        <input ref={inputRef} type="text" minLength={5} required />
-        <button type="submit">Perguntar</button>
+        <textarea
+          ref={inputRef}
+          minLength={5} required
+          className="w-[30em] rounded-3xl border border-white bg-[#0000002e] pl-2 pt-2 flex items-center" />
+        <button
+          className="rounded-3xl white-shadow-sm disabled:opacity-60"
+          type="submit"
+          disabled={isLoading}>
+          Perguntar
+        </button>
       </form>
-    </div>
+    </section>
   )
 }

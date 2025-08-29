@@ -5,7 +5,7 @@ const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_KEY });
 
 export async function askGemini(question: string) {
 
-  const { "Mais informações": more, "O que é o projeto": about } = impulseProjectContext
+  const { "Mais informações": more, "O que é o projeto": about, "Duração do programa": duration } = impulseProjectContext
 
   const response = await ai.models.generateContent({
     model: "gemini-2.5-flash",
@@ -14,6 +14,8 @@ export async function askGemini(question: string) {
       ${about}
 
       ${more}
+
+      ${duration}
 
       ---
       **Pergunta:**

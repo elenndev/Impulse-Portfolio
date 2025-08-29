@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+.white-shadow-sm {
+  box-shadow:
+    0 0 6px -1px rgba(255, 255, 255, 0.1),
+    0 0 4px -1px rgba(255, 255, 255, 0.06);
+}
 
 .btn-yellow {
   background: #FFF001;
@@ -78,7 +83,6 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
