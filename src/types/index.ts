@@ -1,6 +1,6 @@
 export interface Member {
   name: string;
-  linkedin: string;
+  linkedin?: string;
 }
 
 export interface Project {

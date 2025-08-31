@@ -1,49 +1,24 @@
 import type { Group } from "../types";
 
-export const DUMMY_GROUPS: Group[] = [
+// No primeiro momento como são apenas 6 grupos, ainda não existe um backend mas
+// ao incrementar esse projeto, é essencial implementar um banco de dados para armazenar isso !!
+export const groups: Group[] = [
   {
-    id: "1",
-    name: 'Grupo Alpha',
+    id: "6",
+    name: 'Inova Tech',
     members: [
-      { name: 'João Silva', linkedin: 'https://www.linkedin.com/in/' },
-      { name: 'Maria Santos', linkedin: 'https://www.linkedin.com/in/' },
-      { name: 'Pedro Lima', linkedin: 'https://www.linkedin.com/in/' },
+      { name: 'Aline Silva', linkedin: 'https://www.linkedin.com/in/aline-maria-costa-silva-194661327' },
+      { name: 'Igor Lino', },
+      { name: 'Elen Santos', linkedin: 'https://www.linkedin.com/in/elen-damares/' },
+      { name: 'Júnio Evangelista', },
+      { name: 'Mayk Lucas', linkedin: 'https://www.linkedin.com/in/mayk-lucas-0355511aa/' },
+      { name: 'Keliane Soares', linkedin: 'https://www.linkedin.com/in/keliz' }
     ],
     project: {
-      name: 'EcoTrack: Gestão de Resíduos Inteligente',
-      summary: 'Uma plataforma web que ajuda empresas a monitorar e otimizar a gestão de seus resíduos, promovendo a sustentabilidade e a redução de custos.',
-      repositoryLink: 'https://github.com/grupo-alpha/ecotrack',
-      pitchLink: 'https://www.youtube.com/watch?v=pitch_ecotrack',
-    },
-  },
-  {
-    id: "2",
-    name: 'Grupo Beta',
-    members: [
-      { name: 'Ana Souza', linkedin: 'https://www.linkedin.com/in/' },
-      { name: 'Carlos Oliveira', linkedin: 'https://www.linkedin.com/in/' },
-    ],
-    project: {
-      name: 'HelpDesk Pro: Otimização de Atendimento ao Cliente',
-      summary: 'Um sistema de helpdesk que utiliza IA para categorizar e priorizar tickets de suporte, melhorando a eficiência e a satisfação do cliente.',
-      repositoryLink: 'https://github.com/grupo-beta/helpdesk-pro',
-      pitchLink: 'https://www.youtube.com/watch?v=pitch_helpdeskpro',
-    },
-  },
-  {
-    id: "3",
-    name: 'Grupo Gama',
-    members: [
-      { name: 'Lucas Ferreira', linkedin: 'https://www.linkedin.com/in/' },
-      { name: 'Fernanda Costa', linkedin: 'https://www.linkedin.com/in/' },
-      { name: 'Ricardo Pires', linkedin: 'https://www.linkedin.com/in/' },
-      { name: 'Beatriz Martins', linkedin: 'https://www.linkedin.com/in/' },
-    ],
-    project: {
-      name: 'Marketlytics: Análise de Mercado Automatizada',
-      summary: 'Ferramenta de análise de mercado que coleta dados de diversas fontes e gera relatórios interativos para ajudar empresas a tomar decisões estratégicas.',
-      repositoryLink: 'https://github.com/grupo-gama/marketlytics',
-      pitchLink: 'https://www.youtube.com/watch?v=pitch_marketlytics',
+      name: 'CRM para academia',
+      summary: 'Plataforma web para academia que digitaliza o cadastro de alunos, substitui fichas de papel e oferece acesso rápido e seguro às informações, aumentando organização, produtividade e eficiência na gestão.',
+      repositoryLink: 'https://github.com/FWK-inova-tech/sistema-academia',
+      pitchLink: 'https://drive.google.com/drive/folders/1dC2KVMa0lBCgwgc448cxj_70iwAMU5hp?usp=sharing',
     },
   },
 ];

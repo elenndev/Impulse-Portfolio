@@ -43,7 +43,10 @@ export const OpenGroup = ({ groupId, closeGroup }: openGroupProps) => {
           <ul className="list-disc list-inside text-gray-400">
             {groupInfo.members.map((member) => (
               <li key={member.name}>
-                {member.name} - <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-yellow hover:underline">LinkedIn</a>
+                {member.name}
+                {member.linkedin && (<>
+                  - <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-yellow hover:underline">LinkedIn</a>
+                </>)}
               </li>
             ))}
           </ul>
