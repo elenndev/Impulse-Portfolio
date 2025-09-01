@@ -15,6 +15,7 @@ O projeto foi construído utilizando as seguintes tecnologias:
 * **React:** Para a construção da interface de usuário.
 * **React Router:** Para gerenciar a navegação entre as diferentes páginas do portfólio.
 * **Tailwind CSS:** Para a estilização, permitindo um desenvolvimento rápido e um design moderno.
+* Gemini: Para responder perguntas que visitantes do site podem ter, utilizando a API do Gemini juntamente com o contexto do projeto.
 
 ## Rodando o projeto
 Clone esse repositório, instale as dependências e rode o projeto:
