@@ -37,8 +37,11 @@ export function Groupspage() {
         <h2 className="text-4xl font-bold text-destaque-amarelo">Projetos dos Grupos</h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {!openGroup && groups.map((group) => (
-          <div key={group.id}>
+        {!openGroup && groups.map((group, index) => (
+          <div id='groupsList'
+            className='animate-slide-right'
+            style={{ animationDelay: `${index * 0.1}s` }}
+            key={group.id}>
             <Card group={group} onClick={() => handleCardClick(group.id)} />
           </div>
         ))}

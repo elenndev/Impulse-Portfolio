@@ -38,9 +38,9 @@ export const OpenGroup = ({ groupId, closeGroup }: openGroupProps) => {
 
         <h3 className="text-2xl font-bold mb-2 text-destaque-amarelo">{groupInfo.project.name}</h3>
         <p className="text-gray-300 mb-4">{groupInfo.project.summary}</p>
-        <div className="mb-4">
-          <h4 className="font-semibold text-white">Integrantes:</h4>
-          <ul className="list-disc list-inside text-gray-400">
+        <div className="mb-4 mt-2">
+          <h4 className="font-semibold text-white text-left">Integrantes:</h4>
+          <ul className="list-disc list-inside text-gray-400 text-left">
             {groupInfo.members.map((member) => (
               <li key={member.name}>
                 {member.name}
