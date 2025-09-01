@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import type { Group } from "../types";
-import { getGroupDetails } from "../service/api";
+import { getGroupDetails } from "../service/groupsApi";
 
 interface openGroupProps {
   groupId: string;
