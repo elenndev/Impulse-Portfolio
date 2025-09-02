@@ -8,6 +8,9 @@ Como participante do programa, minha principal motivação para desenvolver este
 
 Acredito que esta plataforma pode servir como um recurso valioso, mostrando o potencial dos profissionais formados e o sucesso das soluções criadas nessa edição do programa impulse e também em edições futuras.
 
+## Deploy
+O deploy foi feito no Vercel, e pode ser acessado [aqui](https://impulse-portfolio.vercel.app/).
+
 ## Stack Tecnológica
 
 O projeto foi construído utilizando as seguintes tecnologias:
