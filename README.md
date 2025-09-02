@@ -27,4 +27,6 @@ Clone esse repositório, instale as dependências e rode o projeto:
     npm run dev 
 ``` 
 
+O projeto estará em `http://localhost:5173/`.
+
 ---
