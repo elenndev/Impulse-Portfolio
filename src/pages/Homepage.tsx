@@ -7,7 +7,7 @@ export function Homepage() {
       <section className="flex flex-col items-center w-full">
         <h1 id='homepageTitle' className="text-5xl font-bold text-destaque-amarelo">Programa Impulse</h1>
         <p className="homepage-subtitle mt-4 text-xl text-center max-w-2xl text-gray-300">
-          Bem-vindo à vitrine dos projetos desenvolvidos pelos talentos do programa Impulse, uma parceria entre FWK e Campak.
+          Bem-vindo à vitrine dos projetos desenvolvidos pelos talentos do programa Impulse, uma parceria entre FWK e CANPACK.
         </p>
         <p className="homepage-subtitle mt-2 text-md text-gray-400 text-center">Aqui, você pode explorar as soluções inovadoras que foram criadas para resolver problemas reais.</p>
         <Link to="/grupos"
