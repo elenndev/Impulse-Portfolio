@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { AiQueryField } from '../components/AiQueryField';
 
 export function Homepage() {
   return (
@@ -16,7 +15,7 @@ export function Homepage() {
           Ver os Projetos
         </Link>
       </section>
-      <AiQueryField />
+      {/* <AiQueryField /> */}
     </div>
   );
 }
