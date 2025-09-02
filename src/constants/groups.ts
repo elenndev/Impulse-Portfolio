@@ -10,7 +10,7 @@ export const groups: Group[] = [
       { name: 'Aline Silva', linkedin: 'https://www.linkedin.com/in/aline-maria-costa-silva-194661327' },
       { name: 'Igor Lino', },
       { name: 'Elen Santos', linkedin: 'https://www.linkedin.com/in/elen-damares/' },
-      { name: 'Júnio Evangelista', },
+      { name: 'Júnio Evangelista', linkedin: 'https://www.linkedin.com/in/júnio-evangelista-aires-dos-santos-186479278/' },
       { name: 'Mayk Lucas', linkedin: 'https://www.linkedin.com/in/mayk-lucas-0355511aa/' },
       { name: 'Keliane Soares', linkedin: 'https://www.linkedin.com/in/keliz' }
     ],
